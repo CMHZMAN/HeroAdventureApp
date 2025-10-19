@@ -8,14 +8,16 @@ namespace HeroAdventureApp.Classes
         public static void ShowMainMenu()
         {
             Console.Clear();
-            Console.WriteLine("1) Registrera hjälte");
-            Console.WriteLine("2) Logga in");
-            Console.WriteLine("3) Avsluta");
+            Console.WriteLine("--== Welcome to the Hero Adventure App! ==--\n");
+            Console.WriteLine("1) Registrer hero");
+            Console.WriteLine("2) Log in");
+            Console.WriteLine("3) Exit");
         }
 
         public static void ShowLoggedInMenu()
         {
             Console.Clear();
+            Console.WriteLine("--== Hero Main Menu ==--\n");
             Console.WriteLine("1) Add new quest");
             Console.WriteLine("2) View all quests");
             Console.WriteLine("3) Update/Complete quest");
