@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Newtonsoft.Json;
 
 namespace HeroAdventureApp.Classes
 {
@@ -10,5 +10,7 @@ namespace HeroAdventureApp.Classes
         public DateTime Deadline { get; set; }
         public string Priority { get; set; } // "High", "Medium", "Low"
         public bool IsCompleted { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        public bool ReminderSent { get; set; } // Ny flagga för att spåra om påminnelse skickats
     }
 }
