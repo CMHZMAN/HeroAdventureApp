@@ -14,6 +14,7 @@ class Program
         User currentUser = null;
         QuestManager questManager = null;
 
+
         SetupNotificationTimer();
 
         while (true)

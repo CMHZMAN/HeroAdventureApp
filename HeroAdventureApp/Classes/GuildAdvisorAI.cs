@@ -5,12 +5,16 @@ using System.Linq;
 
 namespace HeroAdventureApp.Classes
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
+   
 
     public class GuildAdvisorAI
     {
+     
+        private static readonly HttpClient httpClient = new HttpClient();
+
+        string apiKey = Environment.GetEnvironmentVariable("");
+
+
         public string GenerateEpicDescription(string title)
         {
             // Simulerad AI: Generera en episk beskrivning på ca 50 ord
